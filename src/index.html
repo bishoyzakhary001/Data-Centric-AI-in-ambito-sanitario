@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Predizione Malattia</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+            max-width: 600px;
+            margin: auto;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 1em;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inserisci i tuoi sintomi</h2>
+    <input type="text" id="symptomInput" placeholder="Es. Ho la febbre e mal di gola">
+    <button onclick="sendRequest()">Predici</button>
+    <div id="result"></div>
+
+    <script>
+        async function sendRequest() {
+            const text = document.getElementById('symptomInput').value;
+            const res = await fetch("/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ text })
+            });
+            const data = await res.json();
+            document.getElementById("result").innerText = "Malattia prevista: " + data.predicted_disease;
+        }
+    </script>
+</body>
+</html>
