@@ -45,22 +45,34 @@ flask run
  🔄 Pipeline
 	
  1.Data Preprocessing
-	  	•Remove records with insufficient symptoms
-	  	•Standardize and automatically translate symptoms
-	  	•Balance underrepresented classes
+	  
+    •Remove records with insufficient symptoms
+
+    •Standardize and automatically translate symptoms
+
+    •Balance underrepresented classes
 
  2.Distributed Training with Spark
-	  	•Extract symptom-based features
-	  	•Train Random Forest and GBT on Spark MLlib
-	  	•Track experiments with MLflow
+	  	
+    •Extract symptom-based features
+
+    •Train Random Forest and GBT on Spark MLlib
+
+    •Track experiments with MLflow
 
  3.Model Deployment
-	  	•Save the model as .pkl
-	  	•Integrate with Flask API
+
+    •Save the model as .pkl
+
+    •Integrate with Flask API
 
  Results
-  	•Initial accuracy: 19% → after cleaning & enrichment → 93%
-  	•Confusion matrix stored in results/confusion_matrix.png
-  	•MLflow UI available for monitoring model runs
+
+   •Initial accuracy: 19% → after cleaning & enrichment → 93%
+  
+   
+   •Confusion matrix stored in results/confusion_matrix.png
+  
+   •MLflow UI available for monitoring model runs
 
    
