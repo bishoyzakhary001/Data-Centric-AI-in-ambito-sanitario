@@ -39,7 +39,7 @@ export FLASK_APP=app   # only the first time
 flask run
 ```
  🔄 Pipeline
-	1.	Data Preprocessing
+	1.Data Preprocessing
 	  	•Remove records with insufficient symptoms
 	  	•Standardize and automatically translate symptoms
 	  	•Balance underrepresented classes
@@ -48,8 +48,8 @@ flask run
 	  	•Train Random Forest and GBT on Spark MLlib
 	  	•Track experiments with MLflow
 	3.Model Deployment
-  	•Save the model as .pkl
-  	•Integrate with Flask API
+	  	•Save the model as .pkl
+	  	•Integrate with Flask API
 
  Results
   	•Initial accuracy: 19% → after cleaning & enrichment → 93%
