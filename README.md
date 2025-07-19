@@ -4,7 +4,7 @@ Big Data course project addressing the distributed classification of diseases fr
 This project follows a Data-Centric AI approach, focusing on profiling, cleaning, and automatic enrichment of symptom data to improve the quality and accuracy of the model.
 
 
-#We used:
+We used:
 	•Apache Spark (PySpark MLlib) for preprocessing and distributed classification
 	•MLflow for experiment tracking
 	•Flask for the web interface
