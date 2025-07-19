@@ -5,10 +5,14 @@ This project follows a Data-Centric AI approach, focusing on profiling, cleaning
 
 
 We used:
-	•Apache Spark (PySpark MLlib) for preprocessing and distributed classification
-	•MLflow for experiment tracking
-	•Flask for the web interface
-	•Random Forest and Gradient Boosted Trees for classification
+
+ •Apache Spark (PySpark MLlib) for preprocessing and distributed classification
+
+ •MLflow for experiment tracking
+
+ •Flask for the web interface
+
+ •Random Forest and Gradient Boosted Trees for classification
 
  📦 Installing the requirements
 
@@ -43,11 +47,13 @@ flask run
 	  	•Remove records with insufficient symptoms
 	  	•Standardize and automatically translate symptoms
 	  	•Balance underrepresented classes
-	2.Distributed Training with Spark
+
+ 2.Distributed Training with Spark
 	  	•Extract symptom-based features
 	  	•Train Random Forest and GBT on Spark MLlib
 	  	•Track experiments with MLflow
-	3.Model Deployment
+
+ 3.Model Deployment
 	  	•Save the model as .pkl
 	  	•Integrate with Flask API
 
