@@ -43,7 +43,8 @@ export FLASK_APP=app   # only the first time
 flask run
 ```
  🔄 Pipeline
-	1.Data Preprocessing
+	
+ 1.Data Preprocessing
 	  	•Remove records with insufficient symptoms
 	  	•Standardize and automatically translate symptoms
 	  	•Balance underrepresented classes
